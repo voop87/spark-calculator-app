@@ -36,19 +36,21 @@ namespace Calculator
             return result;
         }
 
-        public static void RunCalculator(IConsoleWrapper consoleWrapper)
+        public static double RunCalculator(IConsoleWrapper consoleWrapper)
         {
             bool endApp = false;
             // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
+            double result = 0;
+
             while (!endApp)
             {
                 // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
-                double result = 0;
+                
 
                 // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
@@ -104,7 +106,7 @@ namespace Calculator
 
                 Console.WriteLine("\n"); // Friendly linespacing.
             }
-            return;
+            return result;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Calculator.Test
         [Fact]
         public void ShouldReceiveUserInput()
         {
-            IConsoleWrapper console = new MockConsoleWrapper();
+            IConsoleWrapper console = new MockConsoleWrapper("5", "2", "m", "n");
             string userInput1 = console.ReadLine();
             Assert.Equal("5", userInput1);
             string userInput2 = console.ReadLine();
@@ -45,21 +45,42 @@ namespace Calculator.Test
         [Fact]
         public void ShouldMultiply5and2()
         {
-            MockConsoleWrapper mockConsoleWrapper = new MockConsoleWrapper();
-            MyCalculator.RunCalculator(mockConsoleWrapper);
+            MockConsoleWrapper mockConsoleWrapper = new MockConsoleWrapper("5", "2", "m", "n");
+            double result = MyCalculator.RunCalculator(mockConsoleWrapper);
+            Assert.Equal(10, result);
+        }
+
+        [Fact]
+        public void ShouldReturnNaNWhenInvalidOp()
+        {
+            MockConsoleWrapper mockConsoleWrapper = new MockConsoleWrapper("5", "2", "b", "n");
+            double result = MyCalculator.RunCalculator(mockConsoleWrapper);
+            Assert.Equal(double.NaN, result);
         }
 
         public class MockConsoleWrapper : IConsoleWrapper
         {
             Queue<string> UserInputs = new Queue<string>();
+            
+            string _input1;
+            string _input2;
+            string _input3;
+            string _input4;
 
+            public MockConsoleWrapper (string input1, string input2, string input3, string input4)
+            {
+                _input1 = input1;
+                _input2 = input2;
+                _input3 = input3;
+                _input4 = input4;
+            }
 
             public string ReadLine()
             {
-                UserInputs.Enqueue("5");
-                UserInputs.Enqueue("2");
-                UserInputs.Enqueue("m");
-                UserInputs.Enqueue("n");
+                UserInputs.Enqueue(_input1);
+                UserInputs.Enqueue(_input2);
+                UserInputs.Enqueue(_input3);
+                UserInputs.Enqueue(_input4);
 
                 return UserInputs.Dequeue();
             }
