@@ -1,10 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Xunit;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.Test
 {
@@ -66,7 +62,6 @@ namespace Calculator.Test
         public void ShouldReturnErrorMsgWhenInvalidInput()
         {
             MockConsoleWrapper mockConsoleWrapper = new MockConsoleWrapper("a", "2", "b", "n");
-            MyCalculator.RunCalculator(mockConsoleWrapper);
             string errorMsg = mockConsoleWrapper.MessageList[0];
             Assert.Equal("This is not valid input. Please enter an integer value: ", errorMsg);
         }
@@ -74,8 +69,7 @@ namespace Calculator.Test
         public class MockConsoleWrapper : IConsoleWrapper
         {
             Queue<string> UserInputs = new Queue<string>();
-            public List<string> MessageList { get; set; } = new List<string>();
-
+            
             string _input1;
             string _input2;
             string _input3;
@@ -99,22 +93,10 @@ namespace Calculator.Test
                 return UserInputs.Dequeue();
             }
 
-            public void WriteLine(string anyString)
+            public List<string> MessageList = new List<string>();
+
+            public void WriteLine()
             {
-                StringWriter stringWriter = new StringWriter();//stringWriter to store an output
-                Console.SetOut(stringWriter);//redirect output to the stringWriter
-                Console.WriteLine(anyString);//write a message
-                MessageList.Add(stringWriter.ToString());//add the stored in the stringWriter into the list
-
-
-            }
-
-            public void Write(string anyString)
-            {
-                StringWriter stringWriter = new StringWriter();
-                Console.SetOut(stringWriter);
-                Console.Write(anyString);
-                MessageList.Add(stringWriter.ToString());
 
             }
 

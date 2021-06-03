@@ -1,11 +1,9 @@
-F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\CoverletSourceRootsMapping
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\testhost.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Calculator.deps.json
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Calculator.runtimeconfig.json
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Calculator.runtimeconfig.dev.json
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Calculator.exe
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\testhost.exe
-F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll
@@ -17,6 +15,7 @@ F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\ref\Calculator
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Calculator.Test.pdb
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll
+F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CrossPlatEngine.dll
@@ -105,4 +104,3 @@ F:\projects\anko-corp\Calculator\Calculator.Test\obj\Debug\net5.0\Calculator.Tes
 F:\projects\anko-corp\Calculator\Calculator.Test\obj\Debug\net5.0\ref\Calculator.Test.dll
 F:\projects\anko-corp\Calculator\Calculator.Test\obj\Debug\net5.0\Calculator.Test.pdb
 F:\projects\anko-corp\Calculator\Calculator.Test\obj\Debug\net5.0\Calculator.Test.genruntimeconfig.cache
-F:\projects\anko-corp\Calculator\Calculator.Test\bin\Debug\net5.0\NCrunch.Framework.dll

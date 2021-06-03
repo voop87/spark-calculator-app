@@ -4,7 +4,7 @@ namespace Calculator
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             MyCalculator.RunCalculator(new ConsoleWrapper());
         }
