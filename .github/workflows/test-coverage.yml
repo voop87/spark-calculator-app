@@ -3,9 +3,9 @@ name: Generate test coverage report.
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, feature ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, feature ]
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.x
+        dotnet-version: 5.0.x
 
     - name: Restore dependencies
       run: dotnet restore
