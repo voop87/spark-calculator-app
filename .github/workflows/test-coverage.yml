@@ -31,7 +31,7 @@ jobs:
     - uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-        files: ./tests/Calculator.Test/TestResults/coverage.opencover.xml
+        files: ./Calculator.Test/TestResults/coverage.opencover.xml
         flags: unittests 
         name: codecov-umbrella
         fail_ci_if_error: true 
